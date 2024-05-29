@@ -3,12 +3,12 @@ variable "rg_name" {
   description = "Name of the resource group where the app service plan is to be deployed"
 }
 
-variable "app_service_plan_location" {
+variable "service_plan_location" {
   description = "The location/region for your service plan. To get the list of all locations with table format from azure cli, run 'az account list-locations -o table'"
   default     = "can-east"
 }
 
-variable "app_service_plan_name" {
+variable "service_plan_name" {
   type        = string
   description = "The Name of the App service plan that you want to create."
 }
