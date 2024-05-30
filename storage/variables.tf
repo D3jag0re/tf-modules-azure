@@ -11,6 +11,7 @@ variable "storage_acc_name" {
 
 variable "storage_acc_location" {
   type        = string
+  default = "can-east"
   description = "Name of the region wherestorage account needs to be deployed."
 }
 
@@ -34,7 +35,7 @@ variable "is_hns_enabled" {
 
 variable "sftp_enabled" {
   type        = bool
-  default     = true
+  default     = false
   description = "Enable SFTP"
 }
 
