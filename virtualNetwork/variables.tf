@@ -5,7 +5,7 @@ variable "vnet_name" {
 variable "vnet_location" {
   type        = string
   description = "location to deploy."
-  default     = "can-east"
+  default     = "canadacentral"
 }
 variable "rg_name" {
   type        = string
