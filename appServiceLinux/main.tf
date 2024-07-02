@@ -7,7 +7,7 @@ resource "azurerm_linux_web_app" "app_service_linux" {
   name                       = var.app_service_name
   location                   = var.app_service_location
   resource_group_name        = var.rg_name
-  service_plan_id            = data.azurerm_app_service_plan.app_service_plan.id
+  service_plan_id            = var.app_service_plan_id
   https_only                 = true
   client_affinity_enabled    = true
   client_certificate_enabled = false
