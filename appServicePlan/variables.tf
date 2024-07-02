@@ -5,7 +5,7 @@ variable "rg_name" {
 
 variable "service_plan_location" {
   description = "The location/region for your service plan. To get the list of all locations with table format from azure cli, run 'az account list-locations -o table'"
-  default     = "can-east"
+  default     = "canadacentral"
 }
 
 variable "service_plan_name" {
