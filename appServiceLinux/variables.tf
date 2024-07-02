@@ -24,7 +24,7 @@ variable "app_service_name" {
 
 variable "app_service_location" {
   type        = string
-  default = "can-east"
+  default     = "canadacentral"
   description = "App Service location"
 }
 
