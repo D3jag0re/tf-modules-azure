@@ -28,16 +28,8 @@ variable "managed_identity_enabled" {
   type        = bool
   default     = false
 }
-variable "managed_identity_enabled" {
-  description = "Specifies if managed identity should be enabled for the App Service. Defaults to false."
-  type        = bool
-  default     = false
-}
-variable "managed_identity_type" {
-  description = "Specifies the type of managed identity. Defaults to 'SystemAssigned' can also be set to 'UserAssigned"
-  type        = string
-  default     = "SystemAssigned"
-}
+
+
 variable "managed_identity_type" {
   description = "Specifies the type of managed identity. Defaults to 'SystemAssigned' can also be set to 'UserAssigned"
   type        = string
