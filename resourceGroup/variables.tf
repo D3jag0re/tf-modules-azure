@@ -6,7 +6,7 @@ variable "rg_name" {
 
 variable "rg_location" {
   description = "The location/region to deploy"
-  default     = "can-east"
+  default     = "canadacentral"
 }
 
 variable "tags" {
