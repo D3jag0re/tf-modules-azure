@@ -12,6 +12,11 @@ variable "app_service_plan_name" {
   description = "The Name of the App service plan to be used"
 }
 
+variable "app_service_plan_id" {
+  type        = string
+  description = "The ID of the App service plan to be used"
+}
+
 variable "app_service_name" {
   type        = string
   description = "App Service name"
