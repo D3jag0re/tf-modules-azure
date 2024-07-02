@@ -28,7 +28,7 @@ variable "nsg_name" {
 variable "nsg_location" {
   type        = string
   description = "Location of the nsg to be created."
-  default     = "can-east"
+  default     = "canadacentral"
 }
 
 variable "subnet_id" {
