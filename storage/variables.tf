@@ -11,7 +11,7 @@ variable "storage_acc_name" {
 
 variable "storage_acc_location" {
   type        = string
-  default = "can-east"
+  default     = "canadacentral"
   description = "Name of the region wherestorage account needs to be deployed."
 }
 
