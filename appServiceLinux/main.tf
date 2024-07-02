@@ -1,8 +1,3 @@
-data "azurerm_app_service_plan" "app_service_plan" {
-  name                = var.app_service_plan_name
-  resource_group_name = var.app_service_plan_rg_name
-}
-
 resource "azurerm_linux_web_app" "app_service_linux" {
   name                       = var.app_service_name
   location                   = var.app_service_location
