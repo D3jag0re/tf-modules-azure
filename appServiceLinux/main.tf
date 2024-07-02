@@ -1,4 +1,4 @@
-data "azurerm_app_service_plan" "asp" {
+data "azurerm_app_service_plan" "app_service_plan" {
   name                = var.app_service_plan_name
   resource_group_name = var.app_service_plan_rg_name
 }
