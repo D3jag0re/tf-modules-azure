@@ -40,3 +40,9 @@ variable "managed_identity_type" {
   type        = string
   default     = "SystemAssigned"
 }
+
+variable "container_registry_use_managed_identity" {
+  description = "Should connections for Azure Container Registry use Managed Identity"
+  type        = bool
+  default     = false
+}
