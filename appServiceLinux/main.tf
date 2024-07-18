@@ -10,6 +10,7 @@ resource "azurerm_linux_web_app" "app_service_linux" {
   site_config {
     always_on           = false
     minimum_tls_version = "1.2"
+    container_registry_use_managed_identity = var.container_registry_use_managed_identity
   }
 
   lifecycle {
