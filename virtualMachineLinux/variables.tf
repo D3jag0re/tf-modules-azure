@@ -38,5 +38,5 @@ variable "vm_name" {
 variable "size" {
   type        = string
   description = "Resource Group where to deploy VM"
-  default = ""
+  default = "Standard_B1ms"
 }
