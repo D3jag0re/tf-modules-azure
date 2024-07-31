@@ -16,10 +16,10 @@ variable "rg_name" {
 #########
 ## NIC ##
 #########
-variable "nic_name" {
-  type        = string
-  description = "NIC Name"
-}
+#variable "nic_name" {
+#  type        = string
+#  description = "NIC Name"
+#}
 
 variable "nic_subnet" {
   type        = string
