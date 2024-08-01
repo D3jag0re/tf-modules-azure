@@ -10,6 +10,13 @@ resource "azurerm_network_interface" "example" {
   }
 }
 
+# Create (and display) an SSH key
+resource "tls_private_key" "example_ssh" {
+  algorithm = "RSA"
+  rsa_bits  = 4096
+}
+
+# Create virtual machine
 resource "azurerm_linux_virtual_machine" "example" {
   name                = var.vm_name
   location            = var.location
@@ -22,8 +29,8 @@ resource "azurerm_linux_virtual_machine" "example" {
   ]
 
   admin_ssh_key {
-    username   = "adminuser"
-    public_key = file("~/.ssh/id_rsa.pub")
+    username   = "azureuser"
+    public_key = tls_private_key.example_ssh.public_key_openssh
   }
 
   os_disk {
