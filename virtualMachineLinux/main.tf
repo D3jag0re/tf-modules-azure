@@ -23,7 +23,7 @@ resource "azurerm_linux_virtual_machine" "example" {
   resource_group_name = var.rg_name
   
   size                = var.size
-  admin_username      = "adminuser"
+  admin_username      = "azureuser"
   network_interface_ids = [
     azurerm_network_interface.example.id,
   ]
